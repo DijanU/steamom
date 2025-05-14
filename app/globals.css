@@ -1,0 +1,53 @@
+:root {
+  --primary-bg: #9333aa;
+  --card-bg: #2a2a5a;
+  --input-bg: #1e1e4a;
+  --text-color: #ffffff;
+  --button-color: #e94e8a;
+  --button-hover: #f06a9e;
+  --secondary-text: #a0a0c0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--secondary-text);
+}

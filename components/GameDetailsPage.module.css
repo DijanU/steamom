@@ -1,0 +1,121 @@
+.gameDetailsContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-bg);
+  padding: 20px;
+}
+
+.gameDetailsCard {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.gameDetailsHeader {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gameDetailsHeader h2 {
+  cursor: pointer;
+  color: var(--secondary-text);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.gameDetailsHeader h2.active {
+  color: var(--text-color);
+}
+
+.gameDetailsContent {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.gameImageLarge {
+  grid-column: 1;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.placeholderImageLarge {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #6a3093 0%, #a044ff 100%);
+}
+
+.gameInfoDetailed {
+  grid-column: 2;
+}
+
+.gameInfoDetailed h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.gameInfoDetailed h3 {
+  color: var(--secondary-text);
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.gameDescription {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.gamePrice {
+  grid-column: 1;
+  font-size: 24px;
+  color: var(--button-color);
+  font-weight: 700;
+}
+
+.gameActionsDetailed {
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.buyButton {
+  padding: 12px 32px;
+  border-radius: 8px;
+  background-color: var(--button-color);
+  color: white;
+  font-size: 16px;
+}
+
+.backButton {
+  padding: 12px 32px;
+  border-radius: 8px;
+  background-color: var(--input-bg);
+  color: white;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .gameDetailsContent {
+    grid-template-columns: 1fr;
+  }
+
+  .gameInfoDetailed,
+  .gamePrice {
+    grid-column: 1;
+  }
+}

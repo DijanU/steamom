@@ -1,0 +1,144 @@
+.storeContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-bg);
+  padding: 20px;
+}
+
+.storeCard {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.storeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.storeLogo {
+  display: flex;
+  align-items: center;
+}
+
+.storeLogo h1 {
+  margin-left: 12px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.storeNav {
+  display: flex;
+  gap: 24px;
+}
+
+.navItem {
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--secondary-text);
+}
+
+.navItem.active {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.storeFilters {
+  display: flex;
+  gap: 16px;
+  padding: 16px 24px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.filterDropdown {
+  background-color: var(--input-bg);
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100px;
+  cursor: pointer;
+}
+
+.dropdownArrow {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.gamesList {
+  padding: 16px 24px;
+}
+
+.gameItem {
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.gameImage {
+  width: 120px;
+  height: 80px;
+  background-color: var(--primary-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.placeholderImage {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #6a3093 0%, #a044ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameInfo {
+  flex: 1;
+  margin-left: 16px;
+}
+
+.gameInfo h2 {
+  font-size: 20px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.gameInfo p {
+  color: var(--secondary-text);
+  font-size: 14px;
+}
+
+.gameActions {
+  display: flex;
+  gap: 12px;
+}
+
+.wishlistButton,
+.removeButton,
+.senowButton {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: var(--button-color);
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.removeButton {
+  background-color: var(--button-color);
+}
+
+.senowButton {
+  background-color: var(--button-color);
+}

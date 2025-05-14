@@ -1,0 +1,92 @@
+.paymentContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-bg);
+  padding: 20px;
+}
+
+.paymentCard {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.paymentHeader {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.paymentLogo {
+  width: 24px;
+  height: 24px;
+  background-color: var(--button-color);
+  border-radius: 6px;
+  margin-right: 12px;
+}
+
+.paymentHeader h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.paymentContent {
+  padding: 24px;
+}
+
+.paymentContent h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.paymentContent h3 {
+  color: var(--secondary-text);
+  font-size: 18px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.paymentInputGroup {
+  margin-bottom: 16px;
+}
+
+.paymentInputRow {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.paymentInputGroup.half {
+  flex: 1;
+}
+
+.paymentActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.paymentActions .buyButton {
+  padding: 10px 32px;
+  border-radius: 24px;
+  background-color: var(--button-color);
+  color: white;
+  font-size: 16px;
+}
+
+.paymentActions .backButton {
+  padding: 10px 32px;
+  border-radius: 24px;
+  background-color: var(--input-bg);
+  color: white;
+  font-size: 16px;
+  margin-right: 12px;
+}
